@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "better_climbing",
+  "version": "${version}",
+  "name": "Better Climbing",
+  "description": "Improves some things related to climbing",
+  "authors": ["artemisSystem"],
+  "contact": {"Source":  "https://github.com/artemisSystem/better-climbing"},
+  "license": "CC0-1.0",
+  "icon": "icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.BetterClimbing.client.Better_climbingDataGenerator"
+    ],
+    "client": [
+      "org.BetterClimbing.Better_climbing"
+    ],
+    "modmenu": [
+      "org.BetterClimbing.ModMenuIntegration"
+    ]
+  },
+  "depends": {
+    "fabricloader": "0.19.2",
+    "fabric-api": "*",
+    "minecraft": "1.21.11"
+  }
+}
